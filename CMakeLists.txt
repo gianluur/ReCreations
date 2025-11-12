@@ -15,6 +15,9 @@ file(GLOB_RECURSE PROJECT_SOURCES
     "${SRC_DIR}/*.cpp"
     "${SRC_DIR}/*/*.cpp"
     "${SRC_DIR}/*/*/*.cpp"
+    "${SRC_DIR}/*.hpp"
+    "${SRC_DIR}/*/*.hpp"
+    "${SRC_DIR}/*/*/*.hpp"
 )
 
 # Main file
@@ -33,8 +36,11 @@ target_link_libraries(main PRIVATE m)
 target_include_directories(main PUBLIC
     ${SRC_DIR}
     ${SRC_DIR}/memory
+    ${SRC_DIR}/os
     ${SRC_DIR}/utilities
+    ${SRC_DIR}/vector
+    ${SRC_DIR}/result
 )
 
 # Compiler warnings
-target_compile_options(main PRIVATE -Wall -Wextra)
+# target_compile_options(main PRIVATE -Wall -Wextra)

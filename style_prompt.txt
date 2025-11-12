@@ -1,0 +1,51 @@
+C++ Code Refactoring Prompt
+Refactor the following C++ code file. Apply all rules strictly, ensuring correct class/method ordering, separation of declaration/implementation, and use of Doxygen-style comments.
+
+Refactoring Rules:
+Doxygen Comments (// @tag):
+
+Class/Namespace: Use // @brief for a quick explanation and // @param to explain any templates.
+
+Method Declarations (inside class): Add // @brief, // @param, and // @return comments immediately preceding the signature.
+
+Method Implementations (outside class): DO NOT repeat the Doxygen comments here, as they are considered redundant.
+
+Class Structure and Order (Declaration Only):
+
+Separate the body using public: and private: access specifiers.
+
+Public Order:
+
+init method (if present).
+
+Constructor (Vector()), then Deconstructor (~Vector()).
+
+Special Member Functions (Move/Copy/Assignment/etc.), fully documented with Doxygen comments.
+
+All other Public Methods.
+
+Private Order:
+
+Private Attributes (Variables).
+
+Private Methods (if present).
+
+Implementation Separation:
+
+The class definition (declaration) must only contain method signatures.
+
+The complete function implementation (definition) must be placed after the class definition, under an appropriate heading (e.g., // === Implementation of ClassName<T> ===).
+
+Implementation Commenting:
+
+Comment what each logical block of code does within the function implementation (e.g., "Check capacity and reallocate if necessary," "Handle allocation failure"). Do not comment every single line.
+
+Templates and Specialization:
+
+If a class has a generic template and a specialization, the generic version must be placed and implemented first, followed by the specialized version.
+
+Namespaces:
+
+Apply the same structure and commenting rules (// @brief, public/private separation, declaration/implementation separation) to namespaces as you do for classes.
+
+Code to Refactor:

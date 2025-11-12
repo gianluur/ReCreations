@@ -1,12 +1,16 @@
 #include "Recreation.h"
-#include "memory/memory.hpp"
-
 #include <cstdio>
+
+#include "integers.hpp"
+#include "numbers.hpp"
 
 int main(void) {
 
-    void *test = memory::allocate(10);
-    printf("%p\n", test);
+    int8 a = limits<int8>::min();
+    printf("LIMIT: %d\n", a);
+    
+    a += 1;
+    printf("POST: %d\n", a);
 
     return 0;
 }

@@ -1,5 +1,5 @@
 #include "compiler.h"
-#include "os.h"
+#include "os.hpp"
 
 #ifndef TYPES_H
 #define TYPES_H
@@ -21,6 +21,9 @@ typedef signed char int8;
 typedef signed short int16;
 typedef signed int int32;
 typedef signed long long int64;
+
+typedef float float32;
+typedef double float64;
 
 #define UINT8_MIN 0U
 #define UINT8_MAX 255U
@@ -45,5 +48,11 @@ typedef signed long long int64;
 
 #define INT64_MIN -9223372036854775807LL
 #define INT64_MAX 9223372036854775807LL
+
+#define FLOAT32_MIN 1.175494e-38F
+#define FLOAT32_MAX 3.402823e+38F
+
+#define FLOAT64_MIN 2.225074e-308
+#define FLOAT64_MAX 1.797693e+308
 
 #endif
