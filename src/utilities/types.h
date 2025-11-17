@@ -1,14 +1,5 @@
-#include "compiler.h"
-#include "os.hpp"
-
 #ifndef TYPES_H
 #define TYPES_H
-
-#if defined(COMPILER_CLANG) || defined(COMPILER_GCC)
-    #define typeof(type) __typeof__(type)
-#elif defined(COMPILER_MSVC)
-    #define typeof(type) decltype(type)
-#endif
 
 typedef unsigned char byte;
 

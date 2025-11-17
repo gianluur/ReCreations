@@ -1,16 +1,13 @@
-#include "Recreation.h"
 #include <cstdio>
 
-#include "integers.hpp"
-#include "numbers.hpp"
+#include "Recreation.h"
 
-int main(void) {
+int64 test2() { return INT64_MAX; }
 
-    int8 a = limits<int8>::min();
-    printf("LIMIT: %d\n", a);
-    
-    a += 1;
-    printf("POST: %d\n", a);
+int32 test() { return INT32_MAX + test2(); }
 
-    return 0;
+int32 main(void) {
+  int8 x = INT8_MAX + test();
+  printf("%d", x);
+  return 0;
 }

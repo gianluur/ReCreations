@@ -1,7 +1,7 @@
 #ifndef UTILITIES_H
 #define UTILITIES_H
 
-#include "user_context.h"
-#include "types.h"
+#include "utilities/types.h"
+#include "utilities/user_context.h"
 
 #endif

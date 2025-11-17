@@ -21,7 +21,7 @@
 
 //   if (!intToString(major, major_buf) ||
 //       !intToString(minor, minor_buf) ||
-//       !intToString(patch, patch_buf)) 
+//       !intToString(patch, patch_buf))
 //   {
 //       if (buffer) buffer[0] = '\0';
 //       return;
@@ -46,11 +46,11 @@
 //     .os = OS_NAME,
 //     .architecture = ARCHITECTURE_NAME,
 //     .compiler = COMPILER_NAME,
-    
+
 //     #if defined(COMPILER_MSVC)
 //       #if defined(_MSC_FULL_VER)
 //         build_msvc_version(context.compiler_version, _MSC_FULL_VER);
-//       #else 
+//       #else
 //         build_msvc_version(context.compiler_version, _MSC_VER * 10000);
 //       #endif
 //     #else
@@ -60,4 +60,3 @@
 
 //   return context;
 // }
-
